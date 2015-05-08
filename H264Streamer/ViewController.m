@@ -189,7 +189,7 @@ typedef enum {
 - (IBAction)streamVideo:(id)sender {
     NSBundle * mainBundle = [NSBundle mainBundle];
 
-    for (int k = 0; k < 20; k++) {
+    for (int k = 0; k < 1000; k++) {
         NSString * resource = [NSString stringWithFormat:@"nalu_%03d", k];
         NSString * path = [mainBundle pathForResource:resource ofType:@"bin"];
         NSData * NALU = [NSData dataWithContentsOfFile:path];
